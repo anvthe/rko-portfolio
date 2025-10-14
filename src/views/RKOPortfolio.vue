@@ -220,14 +220,38 @@ const prevTestimonial = () => {
   <div class="min-h-screen bg-gray-50 text-gray-800 font-sans antialiased">
 
     <!-- Navigation -->
+<!--    <nav class="fixed w-full bg-black shadow-sm z-50">-->
+
+<!--      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">-->
+<!--        <div class="flex justify-between h-16">-->
+<!--          <div class="flex items-center">-->
+<!--            <span class="text-xl font-bold text-orange-600">Roney</span>-->
+<!--          </div>-->
+
+<!--          <div class="hidden md:flex items-center space-x-8">-->
+<!--            <a-->
+<!--                v-for="item in navItems"-->
+<!--                :key="item.id"-->
+<!--                @click.prevent="scrollToSection(item.id)"-->
+<!--                class="text-gray-500 hover:text-orange-600 px-3 py-2 text-sm font-medium transition-colors cursor-pointer"-->
+<!--            >-->
+<!--              {{ item.text }}-->
+<!--            </a>-->
+<!--          </div>-->
+
+<!--        </div>-->
+<!--      </div>-->
+
+
+<!--    </nav>-->
+
     <nav class="fixed w-full bg-black shadow-sm z-50">
-
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between h-16">
-          <div class="flex items-center">
-            <span class="text-xl font-bold text-orange-600">Roney</span>
-          </div>
+        <div class="flex justify-between h-16 items-center">
+          <!-- Logo -->
+          <span class="text-xl font-bold text-orange-600">Roney</span>
 
+          <!-- Menu Links -->
           <div class="hidden md:flex items-center space-x-8">
             <a
                 v-for="item in navItems"
@@ -239,10 +263,28 @@ const prevTestimonial = () => {
             </a>
           </div>
 
+          <!-- Mobile Hamburger using Tailwind -->
+          <div class="md:hidden">
+            <button @click="isMobileMenuOpen = !isMobileMenuOpen" class="text-gray-300 hover:text-orange-600 focus:outline-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile menu (simple responsive) -->
+        <div v-show="isMobileMenuOpen" class="md:hidden flex flex-col space-y-2 mt-2">
+          <a
+              v-for="item in navItems"
+              :key="item.id"
+              @click.prevent="scrollToSection(item.id)"
+              class="text-gray-500 hover:text-orange-600 px-3 py-2 text-sm font-medium transition-colors cursor-pointer"
+          >
+            {{ item.text }}
+          </a>
         </div>
       </div>
-
-
     </nav>
 
     <!-- Hero Section -->

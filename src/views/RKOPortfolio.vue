@@ -648,7 +648,6 @@ const prevTestimonial = () => {
                   <div>
                     <h4 class="text-lg font-medium text-gray-800 mb-1">Phone</h4>
                     <p class="text-gray-600">+880 1619 109909</p>
-                    <p class="text-gray-500 text-sm mt-1">Available Mon-Fri, 9AM-5PM</p>
                   </div>
                 </div>
 

@@ -249,7 +249,7 @@ const prevTestimonial = () => {
     <header class="relative pt-24 pb-16 md:pt-32 md:pb-24 text-white overflow-hidden">
       <!-- Background Image -->
       <img
-          src="/src/assets/images/DSC00101.jpg"
+          src="@/assets/images/DSC00101.jpg"
           alt="Background"
           class="absolute inset-0 w-full h-full object-cover object-center"
       />
@@ -262,7 +262,7 @@ const prevTestimonial = () => {
         <div
             class="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-white mx-auto mb-8 shadow-xl"
         >
-          <img src="../assets/images/jack.jpg" alt="Roney" class="w-full h-full object-cover" />
+          <img src="@/assets/images/jack.jpg" alt="Roney" class="w-full h-full object-cover" />
         </div>
         <h1 class="text-4xl md:text-5xl font-bold mb-4">Md. Hashibur Rahman Khan</h1>
         <p class="text-xl md:text-2xl mb-8 opacity-90">Software Engineer at Computer Network Systems (CNS) Limited</p>

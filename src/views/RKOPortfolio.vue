@@ -290,9 +290,13 @@ const prevTestimonial = () => {
               :href="social.url"
               target="_blank"
               rel="noopener noreferrer"
-              class="w-10 h-10 rounded-full bg-gray-700 text-white flex items-center justify-center hover:bg-orange-600 transition-colors"
+              class="w-10 h-10 rounded-full flex items-center justify-center transition-transform transform hover:scale-110"
+              :style="{ backgroundColor: '#333' }"
           >
-            <i :class="[social.icon, 'text-white text-xl']"></i>
+          <i
+              :class="[social.icon, 'text-xl']"
+              :style="{ color: social.color }"
+          ></i>
           </a>
 
         </div>
@@ -670,10 +674,13 @@ const prevTestimonial = () => {
                         :href="social.url"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="w-10 h-10 rounded-full bg-orange-600 text-white flex items-center justify-center hover:bg-orange-700 transition-colors"
-                    >
-                      <i :class="[social.icon, 'text-white text-xl']"></i>
+                        class="w-10 h-10 rounded-full flex items-center justify-center transition-transform transform hover:scale-110"
 
+                    >
+                    <i
+                        :class="[social.icon, 'text-xl']"
+                        :style="{ color: social.color }"
+                    ></i>
                     </a>
                   </div>
                 </div>

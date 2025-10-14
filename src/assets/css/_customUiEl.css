@@ -1,0 +1,268 @@
+@layer utilities {
+  /* INPUT ELEMENT */
+  .input-basic {
+    @apply w-full h-12.5 px-4 rounded-3xl dark:bg-cardBg shadow-1 border-cardBg ring-0 focus:ring-0 focus:border-0;
+  }
+
+  .input-h65 {
+    @apply w-full h-16 px-5 rounded-full border-0 shadow-1 ring-0 focus:ring-0 focus:border-0 focus:outline-0 placeholder:text-coal-900 dark:placeholder:text-white;
+  }
+
+  .input-outline {
+    @apply w-full h-full px-4 rounded-full bg-transparent border-[1px] border-coal-600 dark:border-white/40  focus:border-coal-600 focus:ring-0 text-wrap;
+  }
+
+  .input-outline2 {
+    @apply w-full h-12.5 px-4 rounded-full bg-transparent border-[1px] border-[#EAEAEA] dark:border-white/40  focus:border-coal-600 focus:ring-0;
+  }
+
+  .input-transparent {
+    @apply appearance-none bg-transparent border-none w-full mr-3 py-1 px-2 leading-tight placeholder:text-coal-600 focus:outline-none focus:ring-0;
+  }
+
+  .input-basic-color {
+    @apply w-full h-12.5 px-4 rounded-3xl bg-cardBg shadow-1 border-cardBg focus:ring-2 focus:ring-offset-1 focus:ring-offset-bodyColor focus:ring-primary/50 focus:border-0 cursor-pointer;
+  }
+
+  .input-textarea {
+    @apply w-full px-5 py-4 rounded-3xl bg-bodyColor shadow-1 border-0 focus:ring-2 focus:ring-offset-1 focus:ring-offset-bodyColor focus:ring-primary/50 focus:border-0 cursor-pointer  no-scrollbar;
+  }
+
+  .input-basic-1 {
+    @apply w-full h-16 px-5 rounded-full bg-bodyColor shadow-1 border-0 focus:ring-2 focus:ring-offset-1 focus:ring-offset-bodyColor focus:ring-primary/50 focus:border-0 cursor-pointer;
+  }
+
+  .input-basic-1.textarea {
+    @apply min-h-22 h-auto py-4 no-scrollbar;
+  }
+
+  .input-icon {
+    @apply w-full h-16 pl-13 rounded dark:bg-bodyColor shadow-1 border-0 focus:ring-0 dark:placeholder:text-white;
+  }
+
+  .form-svg-icon {
+    @apply absolute-center w-4 3xl:w-6 h-4 3xl:h-6 fill-coal-600 dark:fill-white;
+  }
+
+  .text-edit textarea,
+  .text-edit input {
+    @apply bg-transparent border-[1px] border-coal-600 text-coal-900 dark:text-white whitespace-normal focus:border-primary focus:ring-0;
+  }
+
+  .text-edit textarea {
+    @apply w-full;
+  }
+
+  .text-edit p {
+    @apply flex-start gap-x-2;
+  }
+
+  .text-edit p input {
+    @apply grow;
+  }
+
+  /* .text p input{
+        @apply
+      } */
+  /* MODAL */
+  .fwb-modal > div:first-child {
+    @apply bg-white/40;
+  }
+
+  /* modal body container */
+  .fwb-modal > div:last-child > div > div {
+    @apply bg-cardBg absolute-center w-[90%] py-16;
+  }
+
+  .fwb-modal.exam > div:last-child > div > div {
+    @apply bg-cardBg absolute left-1/2 !top-[55%] transform -translate-x-1/2 -translate-y-1/2
+        w-[90vw] h-[80vh] overflow-y-scroll p-0 pt-0;
+  }
+
+    .fwb-modal.medium > div:last-child > div > div {
+        @apply bg-cardBg absolute-center w-max py-10;
+    }
+
+    .fwb-modal.alert > div:last-child > div > div {
+        @apply bg-cardBg absolute-center max-w-[90%]  lg:max-w-[500px] py-10;
+    }
+
+  .fwb-modal.wide > div:last-child > div {
+    @apply lg:max-w-[70vw];
+  }
+
+  .fwb-modal.wide > div:last-child > div > div {
+    @apply bg-cardBg absolute-center max-w-[90%]  lg:max-w-full py-6;
+  }
+
+  .fwb-modal.team > div:last-child > div > div {
+    @apply py-10 px-8;
+  }
+
+  .fwb-modal .modal-body {
+    @apply px-0 lg:px-20 space-y-8;
+  }
+
+  .fwb-modal.wide .modal-body {
+    @apply px-2 space-y-8;
+  }
+
+  .fwb-modal .modal-body .title {
+    @apply block text-center font-semibold text-[28px];
+  }
+
+  /* modal body header */
+  .fwb-modal > div:last-child > div > div > div:first-child {
+    @apply hidden;
+  }
+
+  /* modal button */
+  .fwb-modal > div:last-child > div > div > div:last-child {
+    @apply border-0 py-0;
+  }
+
+  .fwb-modal button svg {
+    @apply fill-coal-900 dark:fill-white;
+  }
+
+  /* fwb-progress-bar */
+  .result-progress-bar {
+    @apply h-1;
+  }
+
+  .result-progress-bar > div:first-child {
+    @apply h-[5px] bg-lightGray;
+  }
+
+  .result-progress-bar > div:first-child > div {
+    @apply h-[5px] bg-primary text-end leading-5 relative
+        after:absolute after:bottom-[115%] after:left-[95%];
+  }
+
+  /* SEARCH EL */
+  .custom-search {
+    @apply w-full h-[50px] pr-10 text-sm placeholder:text-coal-800 dark:placeholder:text-lightGray/50 shadow-1 border-0 dark:bg-coal-900 focus:ring-primary;
+  }
+
+  .custom-searchEL {
+    @apply w-full max-w-[325px] sm:w-[250px] md:w-[300px]  h-[50px] pr-10 text-sm placeholder:text-coal-800 dark:placeholder:text-lightGray/50 shadow-1 border-0 dark:bg-coal-900 focus:ring-primary;
+  }
+  .custom-searchHC {
+    @apply w-full rounded-full pl-10 pr-4 py-4 border text-sm placeholder:text-coal-800 dark:placeholder:text-lightGray/50 shadow-1 border-0 dark:bg-coal-900 focus:ring-primary;
+  }
+
+
+  /* candidate dashboard test-status */
+  .test-status {
+    @apply min-w-[400px] h-1 relative after:w-1 after:h-2.5 after:bg-inherit after:absolute-middle;
+  }
+
+  /* time duration input element */
+  .custom-duration {
+    @apply space-y-3;
+  }
+
+  .custom-duration .input-group {
+    @apply flex-between px-10 h-16 rounded-full bg-bodyColor w-full shadow-1;
+  }
+
+  .custom-duration .input-group .input-el {
+    @apply flex-center flex-col;
+  }
+
+  .custom-duration .input-group .input-el label {
+    @apply text-xs;
+  }
+
+  .custom-duration .input-group .input-el input {
+    @apply max-w-18 text-center bg-transparent border-0 focus:outline-none focus:ring-0 p-0 text-[22px] font-semibold;
+  }
+
+  /* test duration el */
+  .test-duration {
+    @apply w-full grid grid-cols-2 gap-2 bg-transparent;
+  }
+
+  .test-duration .input-el {
+    @apply flex-between flex-col bg-cardBg rounded py-1 shadow-1;
+  }
+
+  .test-duration input {
+    @apply max-w-[92px] text-center bg-transparent border-0 focus:outline-none focus:ring-0 p-0 text-xl leading-tight font-semibold;
+  }
+}
+
+/* custom fwb accordion for review  */
+.review-fwb-accordion {
+  @apply w-4/5;
+}
+
+.review-fwb-accordion .accordion-header button {
+  @apply w-fit bg-transparent border-0 focus:ring-0 hover:bg-transparent text-coal-900 dark:text-lightGray gap-x-4;
+}
+
+.review-fwb-accordion .accordion-header svg {
+  @apply w-3 h-3 bg-lightGray dark:bg-white rounded-full fill-coal-900;
+}
+
+.review-fwb-accordion .accordion-content div {
+  @apply bg-transparent border-0 focus:ring-0 hover:bg-transparent;
+}
+
+/* fwb toggle */
+.fwb-toggle span {
+  @apply !ring-0;
+}
+
+.fwb-custom-select select {
+  @apply !bg-bodyColor w-full h-16 rounded-full border-0 focus:border-0 px-4 focus:ring-0;
+}
+
+.custom-select-1 {
+  @apply w-full h-16 pl-5 rounded-full focus:ring-0 bg-bodyColor border-0 appearance-none bg-none focus:text-coal-900 dark:focus:text-white;
+}
+.custom-select-2 {
+  @apply bg-cardBg w-full h-10 text-sm rounded border-0 focus:border-0 px-4 outline-none shadow-1 focus:border-primary dark:focus:ring-primary focus:text-coal-900 dark:focus:text-white;
+}
+
+
+
+/* custom-date-picker */
+.custom-date-picker input{
+  @apply w-full h-12.5 bg-bodyColor text-coal-900 dark:text-white rounded py-3 px-5 font-normal outline-none transition border-0 shadow-1 focus:ring-primary placeholder:text-coal-200
+
+}
+
+.custom-date-picker.gray input {
+  @apply bg-cardBg
+}
+.custom-date-picker.capsule input {
+  @apply rounded-full
+}
+
+.custom-date-picker .dp__input_icon {
+  @apply right-5 left-auto
+}
+
+.custom-date-picker .dp__menu,
+.custom-date-picker .dp__instance_calendar {
+  @apply bg-bodyColor dark:text-white border-coal-200 dark:border-coal-600 w-80
+}
+.custom-date-picker.gray .dp__menu,
+.custom-date-picker.gray .dp__menu_inner {
+  @apply bg-cardBg dark:text-white
+}
+
+.custom-date-picker .dp__calendar_item, 
+.custom-date-picker .dp__calendar_header, 
+.custom-date-picker .dp__month_year_select {
+  @apply text-coal-900 dark:text-white
+}
+.custom-date-picker .dp__arrow_bottom,
+.custom-date-picker .dp__arrow_top {
+  @apply bg-inherit border-inherit
+}
+
+.dp__active_date {
+  @apply bg-primary rounded-full
+}

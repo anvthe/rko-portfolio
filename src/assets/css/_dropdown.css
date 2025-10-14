@@ -1,0 +1,17 @@
+@layer components{
+    .my-drop-down{
+        @apply h-12 pr-10 text-sm placeholder:text-coal-900 dark:placeholder:text-lightGray/50 shadow-1 mt-5 dark:bg-coal-900
+    }
+    .my-drop-down .control{
+        @apply dark:bg-coal-900 outline-0
+    }
+    .my-drop-down .menu{
+        @apply dark:bg-coal-900 border-0
+    }
+    .my-drop-down .menu .menu-option{
+        @apply dark:bg-coal-900 dark:text-white
+    }
+    .my-drop-down .search-input{
+        @apply border-none outline-none
+    }
+}

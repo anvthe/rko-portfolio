@@ -1,0 +1,52 @@
+@layer utilities {
+    .toggle-checkbox:checked + .toggle-label {
+        @apply bg-green-400 after:translate-x-5;
+        /* Green */
+    }
+
+    .toggle-label {
+        @apply relative inline-block after:content-[''] after:absolute after:w-5 after:h-5 after:bg-[white] after:transition-transform after:duration-[0.2s] after:rounded-full after:left-0.5 after:top-0.5;
+    }
+
+    .code-editor .cm-gutters {
+        @apply bg-bodyColor rounded-bl-lg
+    }
+
+    .code-editor .cm-content {
+        @apply bg-bodyColor text-coal-900 dark:text-white  rounded-br-lg;
+    }
+
+    .code-editor .cm-scroller {
+        @apply h-[300px]
+    }
+
+    .code-editor .cm-line {
+        @apply text-wrap
+    }
+
+    .code-editor .cm-activeLine {
+        @apply dark:bg-coal-800 bg-secondary
+    }
+
+    .code-editor .cm-activeLineGutter {
+        @apply dark:bg-coal-800 bg-secondary
+    }
+
+    .toggle-checkbox:checked + .toggle-label {
+        @apply bg-green-400 after:translate-x-5;
+        /* Green */
+    }
+
+    .toggle-checkbox:checked + .toggle-label::after {
+        /* Move the toggle circle to the right */
+    }
+
+    .toggle-label {
+        @apply relative inline-block after:content-[''] after:absolute after:w-5 after:h-5 after:bg-[white] after:transition-transform after:duration-[0.2s] after:rounded-full after:left-0.5 after:top-0.5;
+    }
+
+    .select control {
+        @apply border-0
+    }
+
+}

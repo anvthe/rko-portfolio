@@ -1,0 +1,60 @@
+@layer components {
+
+  /* CUSTOM TABLE  */
+  .custom-table {
+    @apply font-gordita !shadow-none !rounded-none py-4 ;
+  }
+
+  /* .custom-table table {
+    @apply shadow-1;
+  } */
+  .custom-table thead {
+    @apply shadow-1 !bg-cardBg h-20 text-center relative z-1 ;
+  }
+  .custom-table.team thead {
+    @apply !bg-bodyColor ;
+  }
+  .custom-table th {
+    @apply text-base lg:text-xl font-medium capitalize;
+  }
+  /* .custom-table tbody {
+    @apply bg-red ;
+  } */
+  .custom-table tbody tr{
+    @apply !bg-transparent cursor-pointer text-coal-900 dark:text-white;
+  }
+  .custom-table tbody tr td{
+    @apply !px-4 !whitespace-normal text-center;
+  }
+
+
+
+
+  /* PREVIEW TABLE  */
+  .preview-table {
+    @apply font-gordita !shadow-none !rounded-none py-4 border-separate;
+  }
+
+  /* .custom-table table {
+    @apply shadow-1;
+  } */
+  .preview-table thead {
+    @apply !bg-transparent ;
+  }
+  .preview-table th {
+    @apply text-sm lg:text-base font-medium capitalize ;
+  }
+
+  .preview-table tbody tr{
+    @apply  !bg-cardBg hover:!bg-primary !border-b-4 border-lightGray/50 dark:!border-coal-900 pb-4 shadow-1 cursor-pointer text-coal-900 dark:text-white;
+  }
+
+  .preview-table tbody tr td{
+    @apply !whitespace-normal !px-4
+  }
+
+  .preview-table tbody tr td:last-child{
+    @apply  !text-left ;
+  }
+
+}

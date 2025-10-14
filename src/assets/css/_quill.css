@@ -1,0 +1,20 @@
+.ql-toolbar.ql-snow {
+  @apply bg-bodyColor align-middle !py-4 rounded-t-3xl !border-0 shadow-xl !border-b-2 !border-b-coal-800;
+}
+.ql-container.ql-snow {
+  @apply bg-bodyColor shadow-xl h-4/5 !border-0;
+}
+.ql-snow.ql-toolbar button {
+  @apply !h-7;
+}
+.ql-snow .ql-stroke {
+  @apply !stroke-black dark:!stroke-white;
+}
+.ql-snow .ql-fill {
+  @apply !fill-black dark:!fill-white;
+}
+
+.ql-active .ql-stroke, .ql-formats > button:hover .ql-stroke{
+  @apply !stroke-coal-900 dark:!stroke-coal-900;
+
+}

@@ -219,32 +219,6 @@ const prevTestimonial = () => {
 <template>
   <div class="min-h-screen bg-gray-50 text-gray-800 font-sans antialiased">
 
-    <!-- Navigation -->
-<!--    <nav class="fixed w-full bg-black shadow-sm z-50">-->
-
-<!--      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">-->
-<!--        <div class="flex justify-between h-16">-->
-<!--          <div class="flex items-center">-->
-<!--            <span class="text-xl font-bold text-orange-600">Roney</span>-->
-<!--          </div>-->
-
-<!--          <div class="hidden md:flex items-center space-x-8">-->
-<!--            <a-->
-<!--                v-for="item in navItems"-->
-<!--                :key="item.id"-->
-<!--                @click.prevent="scrollToSection(item.id)"-->
-<!--                class="text-gray-500 hover:text-orange-600 px-3 py-2 text-sm font-medium transition-colors cursor-pointer"-->
-<!--            >-->
-<!--              {{ item.text }}-->
-<!--            </a>-->
-<!--          </div>-->
-
-<!--        </div>-->
-<!--      </div>-->
-
-
-<!--    </nav>-->
-
     <nav class="fixed w-full bg-black shadow-sm z-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16 items-center">

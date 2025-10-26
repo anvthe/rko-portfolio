@@ -328,21 +328,25 @@ const prevTestimonial = () => {
             <h2 class="text-3xl font-bold text-gray-800 mb-8 relative pb-2 after:absolute after:bottom-0 after:left-0 after:w-16 after:h-1 after:bg-orange-600">
               About Me
             </h2>
-            <div class="md:flex">
-              <div class="md:w-full md:pr-8 mb-8 md:mb-0">
-                <p class="text-gray-600 mb-6 leading-relaxed">
-                  I'm a passionate software engineer with 2+ years of experience building robust backend systems and web
-                  applications.
-                  My expertise lies in Java, Spring Boot, and modern JavaScript frameworks.
-                </p>
-                <p class="text-gray-600 leading-relaxed">
-                  Currently leading backend development at CreativeM, I specialize in creating scalable microservices
-                  architectures
-                  and optimizing system performance. I'm dedicated to writing clean, maintainable code and mentoring
-                  junior developers.
-                </p>
-              </div>
+            <div class="max-w-5xl mx-auto">
+              <div class="md:flex md:items-start md:space-x-10">
 
+                <!-- Content -->
+                <div class="md:w-full">
+                  <p class="text-gray-700 mb-6 leading-relaxed text-base md:text-lg">
+                    I’m a results-driven <span class="font-medium text-gray-900">Software Engineer</span> with over 2 years of experience in backend and full-stack web development. Proficient in <span class="text-blue-600 font-medium">Java</span>, <span class="text-green-600 font-medium">Spring Boot</span>, <span class="text-emerald-600 font-medium">Vue.js</span>, and <span class="text-yellow-600 font-medium">MySQL</span>, I specialize in developing RESTful APIs, designing scalable architectures, and ensuring seamless frontend–backend integration.
+                  </p>
+
+                  <p class="text-gray-700 mb-6 leading-relaxed text-base md:text-lg">
+                    I’ve successfully delivered secure, high-performance solutions for <span class="font-medium text-gray-900">government and international clients</span>, focusing on system reliability, optimization, and user experience. My expertise includes web application development, API design, database management, and system performance tuning.
+                  </p>
+
+                  <p class="text-gray-700 leading-relaxed text-base md:text-lg">
+                    Driven by continuous learning and innovation, I’m passionate about <span class="text-indigo-600 font-medium">DevOps</span>, <span class="text-indigo-600 font-medium">Cloud Technologies</span>, <span class="text-indigo-600 font-medium">Microservices</span>, and scalable enterprise software. I thrive in collaborative, agile environments that challenge me to build impactful, future-ready solutions.
+                  </p>
+                </div>
+
+              </div>
             </div>
           </div>
         </div>
@@ -505,7 +509,7 @@ const prevTestimonial = () => {
       </section>
 
       <!-- Testimonials Section -->
-      <section class="mb-20">
+<!--      <section class="mb-20">
         <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 relative pb-2 after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-orange-600">
           What People Say
         </h2>
@@ -566,7 +570,7 @@ const prevTestimonial = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section>-->
 
       <!-- Contact Section -->
       <section id="contact" class="mb-16">
@@ -650,9 +654,8 @@ const prevTestimonial = () => {
                   </div>
                   <div>
                     <h4 class="text-lg font-medium text-gray-800 mb-1">Address</h4>
-                    <p class="text-gray-600">Bishal Center, Zero Point</p>
-                    <p class="text-gray-600">Tushar Dhara R/A, Kodomtali</p>
-                    <p class="text-gray-600">Dhaka-1362, Bangladesh</p>
+                    <p class="text-gray-600">Mohanagar Project R/A, West Rampura</p>
+                    <p class="text-gray-600">Dhaka, Bangladesh</p>
                   </div>
                 </div>
 
@@ -663,7 +666,7 @@ const prevTestimonial = () => {
                   </div>
                   <div>
                     <h4 class="text-lg font-medium text-gray-800 mb-1">Phone</h4>
-                    <p class="text-gray-600">+880 1619 109909</p>
+                    <p class="text-gray-600">+88 01619-109909</p>
                   </div>
                 </div>
 

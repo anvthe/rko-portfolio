@@ -76,40 +76,43 @@ const projects = [
 // Experience data
 const experiences = [
   {
-    company: 'CreativeM',
-    position: 'Back End Developer',
-    duration: 'March 2016 - Present',
+    company: 'CNS Limited',
+    position: 'Assistant Software Engineer',
+    duration: 'August 2024 - Present',
     description: [
-      'Developed and maintained 10+ microservices using Java and Spring Boot',
-      'Improved API response times by 40% through optimization',
-      'Implemented CI/CD pipelines reducing deployment time by 60%',
-      'Mentored 3 junior developers in best practices'
+      'Developing and maintaining backend services using Java and Spring Boot.',
+      'Designing and integrating RESTful APIs for enterprise-level applications.',
+      'Collaborating with frontend teams to ensure seamless data flow and performance optimization.',
+      'Working with MySql and PostgreSQL for efficient database management and query optimization.'
     ],
-    logo: 'https://via.placeholder.com/100?text=CM'
+    logo: 'https://via.placeholder.com/100?text=CNS'
   },
   {
-    company: 'WebNote',
-    position: 'Web Developer',
-    duration: 'April 2014 - March 2016',
+    company: 'Square Health Ltd.',
+    position: 'Trainee Software Engineer',
+    duration: 'March 2024 - June 2024',
     description: [
-      'Built responsive web applications serving 50k+ monthly users',
-      'Reduced page load times by 30% through performance optimization',
-      'Collaborated with designers to implement UI/UX improvements'
+      'Contributed to the development of "JOTNO" healthcare-related web applications using Spring Boot.',
+      'Implemented RESTful APIs and assisted in database schema design.',
+      'Supported testing, debugging, and performance tuning of backend systems.',
+      'Collaborated within an agile team to deliver high-quality software solutions.'
     ],
-    logo: 'https://via.placeholder.com/100?text=WN'
+    logo: 'https://via.placeholder.com/100?text=SH'
   },
   {
-    company: 'WEBM',
-    position: 'Intern',
-    duration: 'April 2013 - February 2014',
+    company: 'Avalanche Technologies Ltd.',
+    position: 'Support Engineer',
+    duration: 'January 2022 - February 2024',
     description: [
-      'Assisted in developing internal tools and utilities',
-      'Participated in code reviews and team knowledge sharing',
-      'Learned industry best practices and development workflows'
+      'Provided technical support for web-based ERP solutions and system implementation services.',
+      'Assisted in diagnosing and resolving client-reported issues to ensure smooth operations.',
+      'Worked closely with development teams to improve product stability and user experience.',
+      'Gained hands-on experience in backend troubleshooting and database maintenance.'
     ],
-    logo: 'https://via.placeholder.com/100?text=WM'
+    logo: 'https://via.placeholder.com/100?text=AT'
   }
 ];
+
 
 // Education data
 const education = [
@@ -469,37 +472,57 @@ const prevTestimonial = () => {
 
 
       <!-- Education Section -->
-      <section id="education" class="mb-20">
-        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 relative pb-2 after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-orange-600">
+      <section id="education" class="mb-24 bg-gradient-to-b from-gray-50 to-white py-16 px-6 md:px-12 lg:px-20">
+        <!-- Section Title -->
+        <h2
+            class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-14 relative pb-2
+    after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2
+    after:w-20 after:h-1 after:bg-orange-600"
+        >
           Education
         </h2>
-        <div class="grid md:grid-cols-2 gap-8">
+
+        <!-- Education Cards Grid -->
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
           <div
               v-for="edu in education"
               :key="edu.institution"
-              class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow"
+              class="group bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-300"
           >
-            <div class="p-8">
+            <div class="p-8 flex flex-col h-full">
+              <!-- Header -->
               <div class="flex items-center mb-6">
-                <div class="w-16 h-16 rounded-full bg-orange-100 flex items-center justify-center mr-4">
-                  <img :src="edu.logo" :alt="edu.institution" class="w-12 h-12 object-contain">
+                <div
+                    class="w-16 h-16 rounded-full bg-gradient-to-tr from-orange-100 to-orange-200 flex items-center justify-center shadow-inner mr-5 group-hover:scale-105 transition-transform"
+                >
+                  <img
+                      :src="edu.logo"
+                      :alt="edu.institution"
+                      class="w-12 h-12 object-contain rounded-full"
+                  />
                 </div>
                 <div>
-                  <h3 class="text-xl font-semibold text-gray-800">{{ edu.degree }}</h3>
-                  <p class="text-orange-600">{{ edu.institution }}</p>
+                  <h3 class="text-xl font-semibold text-gray-800 leading-tight group-hover:text-orange-600 transition-colors">
+                    {{ edu.degree }}
+                  </h3>
+                  <p class="text-sm text-gray-500">{{ edu.institution }}</p>
                 </div>
               </div>
+
+              <!-- Field & Duration -->
               <div class="mb-4">
-                <h4 class="font-medium text-gray-700 mb-2">{{ edu.field }}</h4>
-                <p class="text-gray-500 text-sm">{{ edu.duration }}</p>
+                <h4 class="font-medium text-gray-700 mb-1">{{ edu.field }}</h4>
+                <p class="text-sm text-gray-500">{{ edu.duration }}</p>
               </div>
-              <ul class="space-y-2">
+
+              <!-- Achievements -->
+              <ul class="mt-auto space-y-2">
                 <li
                     v-for="(item, index) in edu.achievements"
                     :key="index"
-                    class="flex items-start text-gray-600"
+                    class="flex items-start text-gray-600 text-sm leading-relaxed"
                 >
-                  <i class="fas fa-award text-orange-500 mr-2 mt-1"></i>
+                  <i class="fas fa-graduation-cap text-orange-500 mr-2 mt-0.5"></i>
                   <span>{{ item }}</span>
                 </li>
               </ul>
@@ -507,6 +530,7 @@ const prevTestimonial = () => {
           </div>
         </div>
       </section>
+
 
       <!-- Testimonials Section -->
 <!--      <section class="mb-20">

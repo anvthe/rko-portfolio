@@ -514,7 +514,7 @@ const prevTestimonial = () => {
               <!-- Header -->
               <div class="flex items-center mb-6">
                 <div
-                    class="w-16 h-16 rounded-full flex items-center justify-center shadow-inner mr-5 group-hover:scale-105 transition-transform"
+                    class="w-16 h-16 rounded-full flex items-center justify-center mr-5 group-hover:scale-105 transition-transform"
                 >
                   <img
                       :src="edu.logo"

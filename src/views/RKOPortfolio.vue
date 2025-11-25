@@ -4,6 +4,15 @@ import {useRouter} from 'vue-router';
 
 const router = useRouter();
 
+// Dynamically import all images from experience folder
+const experienceLogos = import.meta.glob('../assets/images/*.{png,jpg,jpeg}', { eager: true });
+
+const logos = {};
+for (const path in experienceLogos) {
+  const fileName = path.split('/').pop().split('.')[0];
+  logos[fileName] = experienceLogos[path].default;
+}
+
 // Navigation items
 const navItems = [
   {id: 'about', text: 'About'},
@@ -41,33 +50,34 @@ const skills = [
   {name: 'MySQL', percentage: 70, icon: 'fas fa-database'}
 ];
 
+
 // Projects data
 const projects = [
   {
     title: 'RxLocate',
     description: 'Pharmacy management system with inventory tracking',
-    image: 'src/assets/images/project-1.jpg',
+    image: logos['project-1'],
     link: 'https://github.com/anvthe/RxLocate-Full',
     tags: ['Java', 'Spring Boot', 'Vue.js']
   },
   {
     title: 'FoodDash',
     description: 'Food delivery platform with real-time tracking',
-    image: 'src/assets/images/project-2.jpg',
+    image: logos['project-2'],
     link: '#',
     tags: ['JavaScript', 'Node.js', 'MongoDB']
   },
   {
     title: 'TaskFlow',
     description: 'Productivity app with team collaboration features',
-    image: 'src/assets/images/project-3.jpg',
+    image: logos['project-3'],
     link: '#',
     tags: ['Vue.js', 'Firebase', 'Tailwind CSS']
   },
   {
     title: 'AdManager Pro',
     description: 'Digital advertising campaign management system',
-    image: 'src/assets/images/project-4.jpg',
+    image: logos['project-4'],
     link: '#',
     tags: ['Spring Boot', 'React', 'AWS']
   }
@@ -85,7 +95,7 @@ const experiences = [
       'Collaborating with frontend teams to ensure seamless data flow and performance optimization.',
       'Working with MySql and PostgreSQL for efficient database management and query optimization.'
     ],
-    logo: 'src/assets/images/images 1.png'
+    logo: logos['img1']
   },
   {
     company: 'Square Health Ltd.',
@@ -97,7 +107,7 @@ const experiences = [
       'Supported testing, debugging, and performance tuning of backend systems.',
       'Collaborated within an agile team to deliver high-quality software solutions.'
     ],
-    logo: 'src/assets/images/images 2.jpg'
+    logo: logos['img2']
   },
   {
     company: 'Avalanche Technologies Ltd.',
@@ -109,7 +119,7 @@ const experiences = [
       'Worked closely with development teams to improve product stability and user experience.',
       'Gained hands-on experience in backend troubleshooting and database maintenance.'
     ],
-    logo: 'src/assets/images/images 3.png'
+    logo: logos['img3']
   }
 ];
 
@@ -126,7 +136,7 @@ const education = [
       'Specialized in Software Engineering',
       'Capstone project awarded best in class'
     ],
-    logo: 'src/assets/images/aiub.png'
+    logo: logos['aiub']
   },
   {
     degree: 'College (HSC)',
@@ -138,7 +148,7 @@ const education = [
       'Focus on Mathematics and Physics',
       'Developed strong analytical skills'
     ],
-    logo: 'src/assets/images/milestone.jpg'
+    logo: logos['milestone']
   },
   {
     degree: 'High School (SSC)',
@@ -150,7 +160,7 @@ const education = [
       'Focus on Mathematics and Physics',
       'Developed strong analytical skills'
     ],
-    logo: 'src/assets/images/rob.jpg'
+    logo: logos['rob']
   },
   {
     degree: 'High School (SSC)',
@@ -161,7 +171,7 @@ const education = [
       'Focus on Mathematics and Physics',
       'Developed strong analytical skills'
     ],
-    logo: 'src/assets/images/pirojpur.jpg'
+    logo: logos['pirojpur']
   }
 ];
 

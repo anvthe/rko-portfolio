@@ -46,28 +46,28 @@ const projects = [
   {
     title: 'RxLocate',
     description: 'Pharmacy management system with inventory tracking',
-    image: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80',
+    image: 'src/assets/images/project-1.jpg',
     link: 'https://github.com/anvthe/RxLocate-Full',
     tags: ['Java', 'Spring Boot', 'Vue.js']
   },
   {
     title: 'FoodDash',
     description: 'Food delivery platform with real-time tracking',
-    image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80',
+    image: 'src/assets/images/project-2.jpg',
     link: '#',
     tags: ['JavaScript', 'Node.js', 'MongoDB']
   },
   {
     title: 'TaskFlow',
     description: 'Productivity app with team collaboration features',
-    image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80',
+    image: 'src/assets/images/project-3.jpg',
     link: '#',
     tags: ['Vue.js', 'Firebase', 'Tailwind CSS']
   },
   {
     title: 'AdManager Pro',
     description: 'Digital advertising campaign management system',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80',
+    image: 'src/assets/images/project-4.jpg',
     link: '#',
     tags: ['Spring Boot', 'React', 'AWS']
   }
@@ -85,7 +85,7 @@ const experiences = [
       'Collaborating with frontend teams to ensure seamless data flow and performance optimization.',
       'Working with MySql and PostgreSQL for efficient database management and query optimization.'
     ],
-    logo: 'https://via.placeholder.com/100?text=CNS'
+    logo: 'src/assets/images/images 1.png'
   },
   {
     company: 'Square Health Ltd.',
@@ -97,7 +97,7 @@ const experiences = [
       'Supported testing, debugging, and performance tuning of backend systems.',
       'Collaborated within an agile team to deliver high-quality software solutions.'
     ],
-    logo: 'https://via.placeholder.com/100?text=SH'
+    logo: 'src/assets/images/images 2.jpg'
   },
   {
     company: 'Avalanche Technologies Ltd.',
@@ -109,7 +109,7 @@ const experiences = [
       'Worked closely with development teams to improve product stability and user experience.',
       'Gained hands-on experience in backend troubleshooting and database maintenance.'
     ],
-    logo: 'https://via.placeholder.com/100?text=AT'
+    logo: 'src/assets/images/images 3.png'
   }
 ];
 
@@ -120,24 +120,25 @@ const education = [
     degree: "Bachelor's Degree",
     field: 'Computer Science and Engineering',
     institution: 'American International University-Bangladesh',
-    duration: '2009 - 2013',
+    duration: '2015 - 2019',
     achievements: [
-      'Graduated with honors (GPA: 3.8/4.0)',
+      'Graduated with honors (CGPA: 3.08/4.0)',
       'Specialized in Software Engineering',
       'Capstone project awarded best in class'
     ],
-    logo: 'https://via.placeholder.com/100?text=AIUB'
+    logo: 'src/assets/images/aiub.png'
   },
   {
     degree: 'College (HSC)',
     field: 'Science',
     institution: 'Milestone School and College, Dhaka',
-    duration: '2009 - 2013',
+    duration: '2011 - 2013',
     achievements: [
+      'Graduated with honors (GPA: 4.30/5.0)',
       'Focus on Mathematics and Physics',
       'Developed strong analytical skills'
     ],
-    logo: 'https://via.placeholder.com/100?text=MSC'
+    logo: 'src/assets/images/milestone.jpg'
   },
   {
     degree: 'High School (SSC)',
@@ -145,10 +146,22 @@ const education = [
     institution: 'Abdur Rod High School & College, Bhola',
     duration: '2009 - 2011',
     achievements: [
+      'Graduated with honors (GPA: 5.0/5.0)',
       'Focus on Mathematics and Physics',
       'Developed strong analytical skills'
     ],
-    logo: 'https://via.placeholder.com/100?text=MSC'
+    logo: 'src/assets/images/rob.jpg'
+  },
+  {
+    degree: 'High School (SSC)',
+    field: 'Science',
+    institution: 'Pirojpur Govt. High School, Pirojpur',
+    duration: '2004 - 2009',
+    achievements: [
+      'Focus on Mathematics and Physics',
+      'Developed strong analytical skills'
+    ],
+    logo: 'src/assets/images/pirojpur.jpg'
   }
 ];
 
@@ -268,7 +281,7 @@ const prevTestimonial = () => {
     <header class="relative pt-24 pb-16 md:pt-32 md:pb-24 text-white overflow-hidden">
       <!-- Background Image -->
       <img
-          src="@/assets/images/DSC00101.JPG"
+          src="@/assets/images/DSC00101.jpeg"
           alt="Background"
           class="absolute inset-0 w-full h-full object-cover object-center"
       />
@@ -493,7 +506,7 @@ const prevTestimonial = () => {
               <!-- Header -->
               <div class="flex items-center mb-6">
                 <div
-                    class="w-16 h-16 rounded-full bg-gradient-to-tr from-orange-100 to-orange-200 flex items-center justify-center shadow-inner mr-5 group-hover:scale-105 transition-transform"
+                    class="w-16 h-16 rounded-full flex items-center justify-center shadow-inner mr-5 group-hover:scale-105 transition-transform"
                 >
                   <img
                       :src="edu.logo"

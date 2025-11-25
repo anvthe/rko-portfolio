@@ -1,6 +1,7 @@
 <script setup>
 import {ref} from 'vue';
 import {useRouter} from 'vue-router';
+import cvFile from '@/assets/Md. Hashibur Rahman Khan - AIUB.pdf';
 
 const router = useRouter();
 
@@ -216,15 +217,12 @@ const scrollToSection = (id) => {
 
 // Download CV function
 const downloadCV = () => {
-  // In a real app, initiate file download
-  alert('Downloading CV...');
+  const link = document.createElement('a');
+  link.href = cvFile;
+  link.download = 'Md. Hashibur Rahman Khan - CV.pdf';
+  link.click();
 };
 
-// Logout function
-const logout = () => {
-  localStorage.removeItem('authToken');
-  router.push('/login');
-};
 
 // Form submission
 const submitForm = () => {

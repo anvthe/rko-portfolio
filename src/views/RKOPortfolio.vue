@@ -112,7 +112,7 @@ const experiences = [
   {
     company: 'Avalanche Technologies Ltd.',
     position: 'Support Engineer',
-    duration: 'January 2022 - February 2024',
+    duration: 'January 2020 - February 2024',
     description: [
       'Provided technical support for web-based ERP solutions and system implementation services.',
       'Assisted in diagnosing and resolving client-reported issues to ensure smooth operations.',

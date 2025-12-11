@@ -219,7 +219,7 @@ const scrollToSection = (id) => {
 const downloadCV = () => {
   const link = document.createElement('a');
   link.href = cvFile;
-  link.download = 'Md. Hashibur Rahman Khan - CV.pdf';
+  link.download = 'Md. Hashibur Rahman Khan - AIUB.pdf';
   link.click();
 };
 

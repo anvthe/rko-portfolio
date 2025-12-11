@@ -12,6 +12,7 @@
     "@fortawesome/fontawesome-free": "^7.1.0",
     "axios": "^1.10.0",
     "element-plus": "^2.11.2",
+    "nodemailer": "^7.0.11",
     "sweetalert2": "^11.22.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.1",

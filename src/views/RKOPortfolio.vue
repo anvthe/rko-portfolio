@@ -225,10 +225,26 @@ const downloadCV = () => {
 
 
 // Form submission
-const submitForm = () => {
-  alert('Message sent successfully!');
-  form.value = {name: '', email: '', subject: '', message: ''};
+const submitForm = async () => {
+  try {
+    const response = await fetch('/.netlify/functions/sendMail', {
+      method: 'POST',
+      body: JSON.stringify(form.value)
+    });
+
+    const data = await response.json();
+
+    if (response.ok) {
+      alert('Message sent successfully!');
+      form.value = { name: '', email: '', subject: '', message: '' };
+    } else {
+      alert('Failed to send email. Try again.');
+    }
+  } catch (error) {
+    alert('Something went wrong.');
+  }
 };
+
 
 // Navigation between testimonials
 const nextTestimonial = () => {

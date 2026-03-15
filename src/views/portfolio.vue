@@ -1,7 +1,7 @@
 <script setup>
 import {ref} from 'vue';
 import {useRouter} from 'vue-router';
-import cvFile from '@/assets/Md. Hashibur Rahman Khan - AIUB.pdf';
+import cvFile from '@/assets/Md. Hashibur Rahman Khan_Resume.pdf';
 
 const router = useRouter();
 
@@ -87,7 +87,7 @@ const projects = [
 // Experience data
 const experiences = [
   {
-    company: 'CNS Limited',
+    company: 'Computer Network Systems (CNS) Limited',
     position: 'Assistant Software Engineer',
     duration: 'August 2024 - Present',
     description: [
@@ -143,7 +143,7 @@ const education = [
     degree: 'College (HSC)',
     field: 'Science',
     institution: 'Milestone School and College, Dhaka',
-    duration: '2011 - 2013',
+    duration: '2011 - 2014',
     achievements: [
       'Graduated with honors (GPA: 4.30/5.0)',
       'Focus on Mathematics and Physics',
@@ -219,7 +219,7 @@ const scrollToSection = (id) => {
 const downloadCV = () => {
   const link = document.createElement('a');
   link.href = cvFile;
-  link.download = 'Md. Hashibur Rahman Khan - AIUB.pdf';
+  link.download = 'Md. Hashibur Rahman Khan_Resume.pdf';
   link.click();
 };
 
@@ -241,13 +241,13 @@ const prevTestimonial = () => {
 </script>
 
 <template>
-  <div class="min-h-screen bg-gray-50 text-gray-800 font-sans antialiased">
+  <div class="min-h-screen bg-gray-100 text-gray-800 font-sans antialiased">
 
-    <nav class="fixed w-full bg-black shadow-sm z-50">
+    <nav class="fixed w-full bg-white shadow-sm z-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16 items-center">
           <!-- Logo -->
-          <span class="text-xl font-bold text-orange-600">Roney</span>
+          <span class="text-xl font-bold text-black">Roney</span>
 
           <!-- Menu Links -->
           <div class="hidden md:flex items-center space-x-8">
@@ -255,7 +255,7 @@ const prevTestimonial = () => {
                 v-for="item in navItems"
                 :key="item.id"
                 @click.prevent="scrollToSection(item.id)"
-                class="text-gray-500 hover:text-orange-600 px-3 py-2 text-sm font-medium transition-colors cursor-pointer"
+                class="text-gray-500 hover:text-black px-3 py-2 text-sm font-medium transition-colors cursor-pointer"
             >
               {{ item.text }}
             </a>
@@ -263,7 +263,7 @@ const prevTestimonial = () => {
 
           <!-- Mobile Hamburger using Tailwind -->
           <div class="md:hidden">
-            <button @click="isMobileMenuOpen = !isMobileMenuOpen" class="text-gray-300 hover:text-orange-600 focus:outline-none">
+            <button @click="isMobileMenuOpen = !isMobileMenuOpen" class="text-gray-300 hover:text-blue-600 focus:outline-none">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
               </svg>
@@ -277,7 +277,7 @@ const prevTestimonial = () => {
               v-for="item in navItems"
               :key="item.id"
               @click.prevent="scrollToSection(item.id)"
-              class="text-gray-500 hover:text-orange-600 px-3 py-2 text-sm font-medium transition-colors cursor-pointer"
+              class="text-gray-500 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors cursor-pointer"
           >
             {{ item.text }}
           </a>
@@ -294,7 +294,7 @@ const prevTestimonial = () => {
           class="absolute inset-0 w-full h-full object-cover object-center"
       />
       <!-- Overlay (for darkening background if needed) -->
-      <!--      <div class="absolute inset-0 bg-gradient-to-r from-orange-600/80 to-orange-700/80"></div>-->
+      <!--      <div class="absolute inset-0 bg-gradient-to-r from-blue-600/80 to-blue-700/80"></div>-->
       <div class="absolute inset-0 bg-gradient-to-r"></div>
 
       <!-- Content -->
@@ -305,18 +305,18 @@ const prevTestimonial = () => {
           <img src="@/assets/images/jack.JPG" alt="Roney" class="w-full h-full object-cover" />
         </div>
         <h1 class="text-4xl md:text-5xl font-bold mb-4">Md. Hashibur Rahman Khan</h1>
-        <p class="text-xl md:text-2xl mb-8 opacity-90">Software Engineer at Computer Network Systems (CNS) Limited</p>
+        <p class="text-xl md:text-2xl mb-8 opacity-90">Software Engineer</p>
 
         <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
           <button
               @click="scrollToSection('contact')"
-              class="px-8 py-3 bg-white text-orange-700 rounded-full font-medium hover:bg-gray-100 transition-colors shadow-lg transform hover:scale-105 transition-transform"
+              class="px-8 py-3 bg-white text-blue-700 rounded-full font-medium hover:bg-gray-100 transition-colors shadow-lg transform hover:scale-105 transition-transform"
           >
             <i class="fas fa-paper-plane mr-2"></i> Hire Me
           </button>
           <button
               @click="downloadCV"
-              class="px-8 py-3 border-2 border-white text-white rounded-full font-medium hover:bg-white hover:text-orange-700 transition-colors shadow-lg transform hover:scale-105 transition-transform"
+              class="px-8 py-3 border-2 border-white text-white rounded-full font-medium hover:bg-white hover:text-blue-700 transition-colors shadow-lg transform hover:scale-105 transition-transform"
           >
             <i class="fas fa-download mr-2"></i> Download CV
           </button>
@@ -349,7 +349,7 @@ const prevTestimonial = () => {
       <section id="about" class="mb-20">
         <div class="bg-white rounded-xl shadow-md overflow-hidden">
           <div class="p-8 md:p-10">
-            <h2 class="text-3xl font-bold text-gray-800 mb-8 relative pb-2 after:absolute after:bottom-0 after:left-0 after:w-16 after:h-1 after:bg-orange-600">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 relative pb-2 after:absolute after:bottom-0 after:left-0 after:w-16 after:h-1 after:bg-blue-600">
               About Me
             </h2>
             <div class="max-w-5xl mx-auto">
@@ -358,7 +358,7 @@ const prevTestimonial = () => {
                 <!-- Content -->
                 <div class="md:w-full">
                   <p class="text-gray-700 mb-6 leading-relaxed text-base md:text-lg">
-                    I’m a results-driven <span class="font-medium text-gray-900">Software Engineer</span> with over 2 years of experience in backend and full-stack web development. Proficient in <span class="text-blue-600 font-medium">Java</span>, <span class="text-green-600 font-medium">Spring Boot</span>, <span class="text-emerald-600 font-medium">Vue.js</span>, and <span class="text-yellow-600 font-medium">MySQL</span>, I specialize in developing RESTful APIs, designing scalable architectures, and ensuring seamless frontend–backend integration.
+                    I’m a results-driven <span class="font-medium text-gray-900">Software Engineer</span> with over 2+ years of experience in backend and full-stack web development. Proficient in <span class="text-blue-600 font-medium">Java</span>, <span class="text-green-600 font-medium">Spring Boot</span>, <span class="text-emerald-600 font-medium">Vue.js</span>, and <span class="text-yellow-600 font-medium">MySQL</span>, I specialize in developing RESTful APIs, designing scalable architectures, and ensuring seamless frontend–backend integration.
                   </p>
 
                   <p class="text-gray-700 mb-6 leading-relaxed text-base md:text-lg">
@@ -379,7 +379,7 @@ const prevTestimonial = () => {
 
       <!-- Experience Section -->
       <section id="experience" class="mb-20">
-        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 relative pb-2 after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-orange-600">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 relative pb-2 after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-blue-600">
           Work Experience
         </h2>
         <div class="space-y-8">
@@ -389,12 +389,12 @@ const prevTestimonial = () => {
               class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow"
           >
             <div class="md:flex">
-              <div class="md:w-1/4 bg-orange-700 text-white p-8 flex flex-col items-center justify-center">
+              <div class="md:w-1/4 bg-blue-700 text-white p-8 flex flex-col items-center justify-center">
                 <div class="w-20 h-20 rounded-full bg-white flex items-center justify-center mb-4">
                   <img :src="exp.logo" :alt="exp.company" class="w-16 h-16 object-contain">
                 </div>
                 <h3 class="text-xl font-bold text-center">{{ exp.company }}</h3>
-                <p class="text-orange-200 text-sm mt-2 text-center">{{ exp.duration }}</p>
+                <p class="text-blue-200 text-sm mt-2 text-center">{{ exp.duration }}</p>
               </div>
               <div class="md:w-3/4 p-8">
                 <h3 class="text-2xl font-semibold text-gray-800 mb-4">{{ exp.position }}</h3>
@@ -404,7 +404,7 @@ const prevTestimonial = () => {
                       :key="index"
                       class="flex items-start text-gray-600"
                   >
-                    <i class="fas fa-check text-orange-600 mr-2 mt-1"></i>
+                    <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
                     <span>{{ item }}</span>
                   </li>
                 </ul>
@@ -416,7 +416,7 @@ const prevTestimonial = () => {
 
       <!-- Skills Section -->
       <section id="skills" class="mb-20">
-        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 relative pb-2 after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-orange-600">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 relative pb-2 after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-blue-600">
           Technical Skills
         </h2>
         <div class="grid md:grid-cols-2 gap-8">
@@ -426,14 +426,14 @@ const prevTestimonial = () => {
               class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow"
           >
             <div class="flex items-center mb-4">
-              <div class="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center mr-4">
-                <i :class="skill.icon" class="text-orange-600 text-xl"></i>
+              <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                <i :class="skill.icon" class="text-blue-600 text-xl"></i>
               </div>
               <h3 class="text-xl font-semibold text-gray-800">{{ skill.name }}</h3>
             </div>
             <div class="w-full bg-gray-200 rounded-full h-3">
               <div
-                  class="h-3 rounded-full bg-gradient-to-r from-orange-500 to-orange-700 transition-all duration-1000"
+                  class="h-3 rounded-full bg-gradient-to-r from-blue-500 to-blue-700 transition-all duration-1000"
                   :style="{ width: `${skill.percentage}%` }"
               ></div>
             </div>
@@ -447,7 +447,7 @@ const prevTestimonial = () => {
 
       <!-- Portfolio Section -->
       <section id="portfolio" class="mb-20">
-        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 relative pb-2 after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-orange-600">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 relative pb-2 after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-blue-600">
           My Projects
         </h2>
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -467,7 +467,7 @@ const prevTestimonial = () => {
                 <a
                     :href="project.link"
                     target="_blank"
-                    class="px-4 py-2 bg-white text-orange-600 rounded-full font-medium hover:bg-gray-100 transition-colors"
+                    class="px-4 py-2 bg-white text-blue-600 rounded-full font-medium hover:bg-gray-100 transition-colors"
                 >
                   View Project
                 </a>
@@ -480,7 +480,7 @@ const prevTestimonial = () => {
                 <span
                     v-for="tag in project.tags"
                     :key="tag"
-                    class="px-3 py-1 bg-orange-100 text-orange-700 text-xs rounded-full"
+                    class="px-3 py-1 bg-blue-100 text-blue-700 text-xs rounded-full"
                 >
                   {{ tag }}
                 </span>
@@ -498,7 +498,7 @@ const prevTestimonial = () => {
         <h2
             class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-14 relative pb-2
     after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2
-    after:w-20 after:h-1 after:bg-orange-600"
+    after:w-20 after:h-1 after:bg-blue-600"
         >
           Education
         </h2>
@@ -508,7 +508,7 @@ const prevTestimonial = () => {
           <div
               v-for="edu in education"
               :key="edu.institution"
-              class="group bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-300"
+              class="group bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-blue-300"
           >
             <div class="p-8 flex flex-col h-full">
               <!-- Header -->
@@ -523,7 +523,7 @@ const prevTestimonial = () => {
                   />
                 </div>
                 <div>
-                  <h3 class="text-xl font-semibold text-gray-800 leading-tight group-hover:text-orange-600 transition-colors">
+                  <h3 class="text-xl font-semibold text-gray-800 leading-tight group-hover:text-blue-600 transition-colors">
                     {{ edu.degree }}
                   </h3>
                   <p class="text-sm text-gray-500">{{ edu.institution }}</p>
@@ -543,7 +543,7 @@ const prevTestimonial = () => {
                     :key="index"
                     class="flex items-start text-gray-600 text-sm leading-relaxed"
                 >
-                  <i class="fas fa-graduation-cap text-orange-500 mr-2 mt-0.5"></i>
+                  <i class="fas fa-graduation-cap text-blue-500 mr-2 mt-0.5"></i>
                   <span>{{ item }}</span>
                 </li>
               </ul>
@@ -555,7 +555,7 @@ const prevTestimonial = () => {
 
       <!-- Testimonials Section -->
 <!--      <section class="mb-20">
-        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 relative pb-2 after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-orange-600">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 relative pb-2 after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-blue-600">
           What People Say
         </h2>
         <div class="bg-white rounded-xl shadow-md overflow-hidden">
@@ -576,15 +576,15 @@ const prevTestimonial = () => {
                         <img
                             :src="testimonial.image"
                             :alt="testimonial.name"
-                            class="w-24 h-24 rounded-full object-cover border-4 border-orange-100 shadow-md"
+                            class="w-24 h-24 rounded-full object-cover border-4 border-blue-100 shadow-md"
                         >
                       </div>
                       <div class="md:w-4/5 md:pl-8">
-                        <div class="text-orange-600 text-5xl mb-4">"</div>
+                        <div class="text-blue-600 text-5xl mb-4">"</div>
                         <p class="text-gray-600 text-lg italic mb-6">{{ testimonial.quote }}</p>
                         <div>
                           <h4 class="text-xl font-semibold text-gray-800">{{ testimonial.name }}</h4>
-                          <p class="text-orange-600">{{ testimonial.position }}</p>
+                          <p class="text-blue-600">{{ testimonial.position }}</p>
                         </div>
                       </div>
                     </div>
@@ -595,13 +595,13 @@ const prevTestimonial = () => {
                   @click="prevTestimonial"
                   class="absolute left-0 top-1/2 -translate-y-1/2 -ml-4 bg-white rounded-full p-3 shadow-lg hover:bg-gray-50 focus:outline-none"
               >
-                <i class="fas fa-chevron-left text-orange-600"></i>
+                <i class="fas fa-chevron-left text-blue-600"></i>
               </button>
               <button
                   @click="nextTestimonial"
                   class="absolute right-0 top-1/2 -translate-y-1/2 -mr-4 bg-white rounded-full p-3 shadow-lg hover:bg-gray-50 focus:outline-none"
               >
-                <i class="fas fa-chevron-right text-orange-600"></i>
+                <i class="fas fa-chevron-right text-blue-600"></i>
               </button>
             </div>
             <div class="flex justify-center mt-8 space-x-2">
@@ -610,7 +610,7 @@ const prevTestimonial = () => {
                   :key="index"
                   @click="activeTestimonial = index"
                   class="w-3 h-3 rounded-full focus:outline-none transition-all"
-                  :class="activeTestimonial === index ? 'bg-orange-600 w-6' : 'bg-gray-300'"
+                  :class="activeTestimonial === index ? 'bg-blue-600 w-6' : 'bg-gray-300'"
               ></button>
             </div>
           </div>
@@ -619,7 +619,7 @@ const prevTestimonial = () => {
 
       <!-- Contact Section -->
       <section id="contact" class="mb-16">
-        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 relative pb-2 after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-orange-600">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 relative pb-2 after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-blue-600">
           Get In Touch
         </h2>
         <div class="bg-white rounded-xl shadow-md overflow-hidden">
@@ -635,7 +635,7 @@ const prevTestimonial = () => {
                         type="text"
                         id="name"
                         v-model="form.name"
-                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                         placeholder="Your name"
                         required
                     >
@@ -646,7 +646,7 @@ const prevTestimonial = () => {
                         type="email"
                         id="email"
                         v-model="form.email"
-                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                         placeholder="your.email@example.com"
                         required
                     >
@@ -658,7 +658,7 @@ const prevTestimonial = () => {
                       type="text"
                       id="subject"
                       v-model="form.subject"
-                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all"
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                       placeholder="What's this about?"
                       required
                   >
@@ -669,14 +669,14 @@ const prevTestimonial = () => {
                       id="message"
                       v-model="form.message"
                       rows="5"
-                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all"
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                       placeholder="Your message here..."
                       required
                   ></textarea>
                 </div>
                 <button
                     type="submit"
-                    class="w-full px-6 py-3 bg-gradient-to-r from-orange-600 to-orange-700 text-white rounded-lg font-medium hover:from-orange-700 hover:to-orange-800 transition-all shadow-md hover:shadow-lg"
+                    class="w-full px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg font-medium hover:from-blue-700 hover:to-blue-800 transition-all shadow-md hover:shadow-lg"
                 >
                   <i class="fas fa-paper-plane mr-2"></i> Send Message
                 </button>
@@ -694,8 +694,8 @@ const prevTestimonial = () => {
               <div class="space-y-6">
                 <!-- Address -->
                 <div class="flex items-start">
-                  <div class="bg-orange-100 p-3 rounded-lg mr-4 flex-shrink-0">
-                    <i class="fas fa-map-marker-alt text-orange-600"></i>
+                  <div class="bg-blue-100 p-3 rounded-lg mr-4 flex-shrink-0">
+                    <i class="fas fa-map-marker-alt text-blue-600"></i>
                   </div>
                   <div>
                     <h4 class="text-lg font-medium text-gray-800 mb-1">Address</h4>
@@ -706,8 +706,8 @@ const prevTestimonial = () => {
 
                 <!-- Phone -->
                 <div class="flex items-start">
-                  <div class="bg-orange-100 p-3 rounded-lg mr-4 flex-shrink-0">
-                    <i class="fas fa-phone-alt text-orange-600"></i>
+                  <div class="bg-blue-100 p-3 rounded-lg mr-4 flex-shrink-0">
+                    <i class="fas fa-phone-alt text-blue-600"></i>
                   </div>
                   <div>
                     <h4 class="text-lg font-medium text-gray-800 mb-1">Phone</h4>
@@ -717,13 +717,13 @@ const prevTestimonial = () => {
 
                 <!-- Email -->
                 <div class="flex items-start">
-                  <div class="bg-orange-100 p-3 rounded-lg mr-4 flex-shrink-0">
-                    <i class="fas fa-envelope text-orange-600"></i>
+                  <div class="bg-blue-100 p-3 rounded-lg mr-4 flex-shrink-0">
+                    <i class="fas fa-envelope text-blue-600"></i>
                   </div>
                   <div>
                     <h4 class="text-lg font-medium text-gray-800 mb-1">Email</h4>
-                    <a href="mailto:roneykhan@live.com" class="text-orange-600 hover:text-orange-800 transition-colors">roneykhan@live.com</a>
-                    <p class="text-gray-500 text-sm mt-1">Typically replies within 24 hours</p>
+                    <a href="mailto:roneykhan@live.com" class="text-blue-600 hover:text-blue-800 transition-colors">roneykhan@live.com</a>
+<!--                    <p class="text-gray-500 text-sm mt-1">Typically replies within 24 hours</p>-->
                   </div>
                 </div>
 
@@ -755,44 +755,44 @@ const prevTestimonial = () => {
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Footer Content -->
-        <div class="flex flex-col items-center text-center space-y-8">
+<!--    <footer class="bg-gray-800 text-white py-12">-->
+<!--      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">-->
+<!--        &lt;!&ndash; Footer Content &ndash;&gt;-->
+<!--        <div class="flex flex-col items-center text-center space-y-8">-->
 
 
-          <!-- Name -->
-          <h2 class="text-2xl sm:text-3xl md:text-4xl text-orange-600 font-bold">
-            Roney Khan
-          </h2>
+<!--          &lt;!&ndash; Name &ndash;&gt;-->
+<!--          <h2 class="text-2xl sm:text-3xl md:text-4xl text-blue-600 font-bold">-->
+<!--            Roney Khan-->
+<!--          </h2>-->
 
-          <!-- Description -->
-          <p class="text-gray-400 max-w-md sm:max-w-xl md:max-w-2xl leading-relaxed px-2">
-            Software Engineer specializing in Java, Spring Boot, and modern web technologies.
-          </p>
+<!--          &lt;!&ndash; Description &ndash;&gt;-->
+<!--          <p class="text-gray-400 max-w-md sm:max-w-xl md:max-w-2xl leading-relaxed px-2">-->
+<!--            Software Engineer specializing in Java, Spring Boot, and modern web technologies.-->
+<!--          </p>-->
 
-          <!-- Navigation Links -->
-          <div class="flex flex-wrap justify-center gap-4 sm:gap-8">
-            <a
-                v-for="item in navItems"
-                :key="item.id"
-                @click.prevent="scrollToSection(item.id)"
-                class="text-gray-400 hover:text-white transition-colors cursor-pointer text-sm sm:text-base"
-            >
-              {{ item.text }}
-            </a>
-          </div>
+<!--          &lt;!&ndash; Navigation Links &ndash;&gt;-->
+<!--          <div class="flex flex-wrap justify-center gap-4 sm:gap-8">-->
+<!--            <a-->
+<!--                v-for="item in navItems"-->
+<!--                :key="item.id"-->
+<!--                @click.prevent="scrollToSection(item.id)"-->
+<!--                class="text-gray-400 hover:text-white transition-colors cursor-pointer text-sm sm:text-base"-->
+<!--            >-->
+<!--              {{ item.text }}-->
+<!--            </a>-->
+<!--          </div>-->
 
-          <!-- Divider -->
-          <div class="w-full border-t border-gray-700"></div>
+<!--          &lt;!&ndash; Divider &ndash;&gt;-->
+<!--          <div class="w-full border-t border-gray-700"></div>-->
 
-          <!-- Footer Bottom -->
-          <p class="text-gray-500 text-xs sm:text-sm">
-            &copy; 2025 Roney Khan. All rights reserved.
-          </p>
-        </div>
-      </div>
-    </footer>
+<!--          &lt;!&ndash; Footer Bottom &ndash;&gt;-->
+<!--          <p class="text-gray-500 text-xs sm:text-sm">-->
+<!--            &copy; 2025 Roney Khan. All rights reserved.-->
+<!--          </p>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </footer>-->
 
   </div>
 </template>

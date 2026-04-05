@@ -358,11 +358,11 @@ const prevTestimonial = () => {
                 <!-- Content -->
                 <div class="md:w-full">
                   <p class="text-gray-700 mb-6 leading-relaxed text-base md:text-lg">
-                    I’m a results-driven <span class="font-medium text-gray-900">Software Engineer</span> with over 2+ years of experience in backend and full-stack web development. Proficient in <span class="text-blue-600 font-medium">Java</span>, <span class="text-green-600 font-medium">Spring Boot</span>, <span class="text-emerald-600 font-medium">Vue.js</span>, and <span class="text-yellow-600 font-medium">MySQL</span>, I specialize in developing RESTful APIs, designing scalable architectures, and ensuring seamless frontend–backend integration.
+                    I’m a results-driven <span class="font-medium text-gray-900">Software Engineer</span> with 6+ years of experience, including 4 years in application support and 2+ years in backend and full-stack web development. Proficient in <span class="text-blue-600 font-medium">Java</span>, <span class="text-green-600 font-medium">Spring Boot</span>, <span class="text-emerald-600 font-medium">Vue.js</span>, and <span class="text-yellow-600 font-medium">MySQL</span>, I specialize in developing RESTful APIs, designing scalable architectures, and ensuring seamless frontend–backend integration.
                   </p>
 
                   <p class="text-gray-700 mb-6 leading-relaxed text-base md:text-lg">
-                    I’ve successfully delivered secure, high-performance solutions for <span class="font-medium text-gray-900">government and international clients</span>, focusing on system reliability, optimization, and user experience. My expertise includes web application development, API design, database management, and system performance tuning.
+                    I started my career as a <span class="font-medium text-gray-900">Support Engineer</span>, gaining strong expertise in system monitoring, troubleshooting, and production issue resolution. I’ve successfully delivered secure, high-performance solutions for <span class="font-medium text-gray-900">government and international clients</span>, focusing on system reliability, optimization, and user experience.
                   </p>
 
                   <p class="text-gray-700 leading-relaxed text-base md:text-lg">
